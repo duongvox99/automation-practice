@@ -1,0 +1,60 @@
+{
+  "name": "cbz-automation-practice",
+  "version": "1.0.0",
+  "description": "automation practice",
+  "scripts": {
+    "test": "wdio",
+    "allure-report": "node_modules/.bin/allure generate ./test/reports/allure-results && allure open",
+    "junit-report": "node_modules/.bin/junit-viewer --results=./test/reports/junit-results --save=junit-results.html && open junit-results.html"
+  },
+  "keywords": [
+    "cybozu vietnam",
+    "automation practice"
+  ],
+  "author": "Cybozu Vietnam - Automation Testing Team",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "@wdio/allure-reporter": "^5.16.16",
+    "@wdio/cli": "^5.18.5",
+    "@wdio/dot-reporter": "^5.2.3",
+    "@wdio/junit-reporter": "^5.3.1",
+    "@wdio/local-runner": "^5.18.5",
+    "@wdio/mocha-framework": "^5.16.15",
+    "@wdio/selenium-standalone-service": "^5.16.10",
+    "@wdio/spec-reporter": "^5.16.11",
+    "@wdio/sync": "^5.18.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "chromedriver": "^79.0.0",
+    "comma-separated-values": "^3.6.4",
+    "date-utils": "^1.2.21",
+    "prettier": "1.13.5",
+    "selenium-standalone": "^6.17.0",
+    "sprintf-js": "^1.1.1",
+    "wdio-chromedriver-service": "^5.0.2",
+    "webdriverio": "^5.18.5",
+    "allure-commandline": "^2.13.0",
+    "junit-viewer": "^4.11.1",
+    "axios": "^0.19.1",
+    "log4js": "^2.4.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27"
+  }
+}

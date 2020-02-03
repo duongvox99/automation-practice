@@ -1,0 +1,38 @@
+exports.config = {
+     runner: 'local',
+    // host: 'localhost',
+    // port: 4444,
+    //path: '/wd/hub',
+    baseUrl: process.env.TESTING_HOST,
+    logLevel: 'trace',
+    specs: [],
+    framework: 'mocha',
+    mochaOpts: {
+        ui: 'bdd',
+        timeout: 900000,
+        compilers: ['js:@babel/register'],
+    },
+    sync: true,
+    services: ['selenium-standalone'],
+    reporters: [
+        'spec',
+        ['junit', {
+            outputDir: './test/reports/junit-results/',
+        }
+        ],
+
+        ['allure', {
+            outputDir: './test/reports/allure-results/',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: false,
+        }
+        ],
+    ],
+    before: () => {
+        const chai = require('chai');
+        global.expect = chai.expect;
+        global.assert = chai.assert;
+        global.sprintf = require('sprintf-js').sprintf;
+        global.vsprintf = require('sprintf-js').vsprintf;
+    },
+};
