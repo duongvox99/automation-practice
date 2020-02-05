@@ -1,6 +1,11 @@
-describe('POST schedule/events', () => {
-    before('Load API', () => {
+import FactoryApi from '../../../../common/api/FactoryApi';
+import AppIds from '../../../../../../e2e-core/src/common/AppIds';
 
+describe('POST schedule/events', () => {
+    let scheduleApi;
+
+    before('Load API', () => {
+        scheduleApi = new FactoryApi(AppIds.SCHEDULE);
     });
 
     before('Load testing data', () => {
