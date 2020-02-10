@@ -2,17 +2,15 @@ import { deepCompare } from '../ObjectUtils';
 import MismatchMessage from './error/MismatchMessage';
 import NotFoundMessage from './error/NotFoundMessage';
 
-class JsonComparisonUtils {
+class ApiVerificationUtils {
     /**
      *
      * @param {string} propertyName
-     * @param {string} parentPropertyName
      * @param {Object} jsonSource
      * @param {Object} jsonDestination
      */
     compareProperty(
         propertyName,
-        parentPropertyName,
         jsonSource,
         jsonDestination
     ) {
@@ -23,7 +21,6 @@ class JsonComparisonUtils {
             ),
             MismatchMessage.generateFailedMessage(
                 propertyName,
-                parentPropertyName,
                 jsonSource,
                 jsonDestination
             )
@@ -33,13 +30,11 @@ class JsonComparisonUtils {
     /**
      *
      * @param {string} propertyName
-     * @param {string} parentPropertyName
      * @param {Object} jsonSource
      * @param {Object} jsonDestination
      */
-    verifyJSONDestinationPropertyExisted(
+    verifyDestinationPropertyExisted(
         propertyName,
-        parentPropertyName,
         jsonSource,
         jsonDestination
     ) {
@@ -47,7 +42,6 @@ class JsonComparisonUtils {
             typeof jsonDestination[propertyName] !== 'undefined',
             NotFoundMessage.generateFailedMessage(
                 propertyName,
-                parentPropertyName,
                 jsonSource,
                 jsonDestination
             )
@@ -55,4 +49,4 @@ class JsonComparisonUtils {
     }
 }
 
-module.exports = new JsonComparisonUtils();
+module.exports = new ApiVerificationUtils();

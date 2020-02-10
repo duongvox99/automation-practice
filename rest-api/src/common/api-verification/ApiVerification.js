@@ -1,44 +1,39 @@
-import JsonComparisonUtils from './JsonComparisonUtils';
+import ApiVerificationUtils from './ApiVerificationUtils';
 
-class JsonComparison {
+class ApiVerification {
     /**
      *
      * @param {Object} jsonSource
      * @param {Object} jsonDestination
-     * @param {string=} parentPropertyName
      */
-    compareJsonProperties(
+    verify(
         jsonSource,
         jsonDestination,
-        parentPropertyName = 'event'
     ) {
         const propertyNameList = Object.getOwnPropertyNames(jsonSource);
 
         for (const propertyName of propertyNameList) {
             const isObject = jsonSource[propertyName] instanceof Object;
             if (!isObject) {
-                JsonComparisonUtils.compareProperty(
+                ApiVerificationUtils.compareProperty(
                     propertyName,
-                    parentPropertyName,
                     jsonSource,
                     jsonDestination
                 );
             } else {
-                JsonComparisonUtils.verifyJSONDestinationPropertyExisted(
+                ApiVerificationUtils.verifyDestinationPropertyExisted(
                     propertyName,
-                    parentPropertyName,
                     jsonSource,
                     jsonDestination
                 );
 
-                this.compareJsonProperties(
+                this.verify(
                     jsonSource[propertyName],
                     jsonDestination[propertyName],
-                    `${parentPropertyName}.${propertyName}`
                 );
             }
         }
     }
 }
 
-module.exports = new JsonComparison();
+module.exports = new ApiVerification();
