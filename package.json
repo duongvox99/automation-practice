@@ -55,6 +55,7 @@
     "moment-timezone": "^0.5.27",
     "allure-commandline": "^2.13.0",
     "junit-viewer": "^4.11.1",
+    "clean-css": ">=4.1.11",
     "log4js": "^6.1.2"
   }
 }
