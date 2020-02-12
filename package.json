@@ -35,11 +35,7 @@
     "selenium-standalone": "^6.17.0",
     "sprintf-js": "^1.1.1",
     "wdio-chromedriver-service": "^5.0.2",
-    "webdriverio": "^5.18.5",
-    "allure-commandline": "^2.13.0",
-    "junit-viewer": "^4.11.1",
-    "axios": "^0.19.1",
-    "log4js": "^2.4.1"
+    "webdriverio": "^5.18.5"
   },
   "babel": {
     "presets": [
@@ -54,7 +50,11 @@
     ]
   },
   "dependencies": {
+    "axios": "^0.19.1",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.27"
+    "moment-timezone": "^0.5.27",
+    "allure-commandline": "^2.13.0",
+    "junit-viewer": "^4.11.1",
+    "log4js": "^6.1.2"
   }
 }

@@ -1,3 +1,5 @@
+import PageNavigator from "../../../../e2e-core/src/common/pages/PageNavigator";
+
 const queryString = require('querystring');
 const logger = require('./Logger');
 const sendRequest = require('./AxiosRequest');
@@ -91,7 +93,7 @@ export default class AbstractApi {
             requestQueryString = queryString.stringify(requestInfo.parameters);
         }
 
-        return `${process.env.TESTING_HOST}/api/${DEFAULT_API_VERSION}/${requestInfo.url}?${requestQueryString}`;
+        return `${PageNavigator.garoonRootUrl()}/api/${DEFAULT_API_VERSION}/${requestInfo.url}?${requestQueryString}`;
     }
 
     /**
