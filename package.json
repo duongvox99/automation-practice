@@ -4,8 +4,7 @@
   "description": "automation practice",
   "scripts": {
     "test": "wdio",
-    "allure-report": "node_modules/.bin/allure generate ./test/reports/allure-results && allure open",
-    "junit-report": "node_modules/.bin/junit-viewer --results=./test/reports/junit-results --save=junit-results.html && open junit-results.html"
+    "allure-report": "node_modules/.bin/allure generate ./test/reports/allure-results && allure open"
   },
   "keywords": [
     "cybozu vietnam",
@@ -54,8 +53,6 @@
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
     "allure-commandline": "^2.13.0",
-    "junit-viewer": "^4.11.1",
-    "clean-css": ">=4.1.11",
     "log4js": "^6.1.2"
   }
 }
