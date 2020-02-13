@@ -1,3 +1,10 @@
+// This environment parameters for on-premise version
+process.env.TESTING_HOST = 'http://127.0.0.1';
+process.env.APP_NAME = 'cbgrn';
+process.env.CGI_DIR = 'cgi-bin';
+process.env.GAROON_TYPE = 'cgi';
+// process.env.NUMBER_RETRIES = 0;
+
 exports.config = {
      runner: 'local',
     // host: 'localhost',

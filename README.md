@@ -1,7 +1,7 @@
 # automation_practice
 
 ## Installation
-This practice is tested on **Node v10.16.0**.  While earlier versions of node may be compatible, they have not been tested or verified.
+This practice is tested on **Node v10.16.0**.  While earlier versions of nodejs may be compatible, they have not been tested or verified.
 
 ### Install required Software
 
@@ -20,8 +20,13 @@ Or, download them from their websites.
 
 1. Open Terminal and `cd` to automation_practice repository.
 2. Run the command `npm install` to install dependencies packages<br/>
-3. That's all.    
+3. That's all.
 
+### Update TESTING_HOST (Garoon Testing URL)
+
+1. Open file `wdio.conf.js` by any your IDE or Text Editor, such as PhpStorm, Notepad++, ... 
+2. Update the value of the variable `process.env.TESTING_HOST`. (This value will be provided in the workshop)
+3. Follow the section `How to run tests` to make sure your installation is correct. 
 
 ## How to run tests
 
