@@ -1,7 +1,7 @@
 import DateTimeGenerator from "../../../../../e2e-core/src/common/DateTimeGenerator";
 import RegularAppointment from "../../../../../e2e-core/src/schedule/models/RegularAppointment";
 
-const signInUser = {username: "Administrator", password: "cybozu"};
+const signInUser = {username: "user1", password: "user1"};
 
 const currentDate = new DateTimeGenerator().adjustDateTime({day: 0});
 let currentHours = new Date().getHours();
