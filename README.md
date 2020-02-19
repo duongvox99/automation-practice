@@ -3,12 +3,13 @@
 ## Installation
 This practice is tested on **Node v10.16.0**.  While earlier versions of nodejs may be compatible, they have not been tested or verified.
 
-### Install required Software
+### 1. Install required Software
 
 - JDK 1.8+
 - NodeJS (version is equal or greater than v10.16.0)
 
-You can download these software directly from our google drive: https://drive.google.com/open?id=1_v8ZQkK7aSANTh6aOtyCu8qQb8eyDnrj , then install them on your computer.
+You can download these software directly from our google drive and then install them on your computer
+https://drive.google.com/open?id=1_v8ZQkK7aSANTh6aOtyCu8qQb8eyDnrj
 
 Or, download them from their websites.
 
@@ -16,13 +17,13 @@ Or, download them from their websites.
 
 `Node.JS:` Install from the site - https://nodejs.org/en/  take the LTS version based on your Operating system. Please make sure you install NodeJS globally.
 
-### Install packages for practice
+### 2. Install packages for practice
 
 1. Open Terminal and `cd` to automation_practice repository.
 2. Run the command `npm install` to install dependencies packages<br/>
 3. That's all.
 
-### Update TESTING_HOST (Garoon Testing URL)
+### 3. Update TESTING_HOST (Garoon Testing URL)
 
 1. Open file `wdio.conf.js` by any your IDE or Text Editor, such as PhpStorm, Notepad++, ... 
 2. Update the value of the variable `process.env.TESTING_HOST`. (This value will be provided in the workshop)
