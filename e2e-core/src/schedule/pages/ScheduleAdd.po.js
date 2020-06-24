@@ -60,7 +60,7 @@ class ScheduleAddPo {
      * @returns {ScheduleAddPo}
      */
     selectEndYear(endYearValue) {
-        // TODO: implement body method
+        ElementUtils.element('#end_year').selectByAttribute("value", endYearValue);
 
         return this;
     }
@@ -70,7 +70,7 @@ class ScheduleAddPo {
      * @returns {ScheduleAddPo}
      */
     selectEndMonth(endMonthValue) {
-        // TODO: implement body method
+        ElementUtils.element('#end_month').selectByAttribute("value", endMonthValue);
 
         return this;
     }
@@ -80,7 +80,7 @@ class ScheduleAddPo {
      * @returns {ScheduleAddPo}
      */
     selectEndDay(endDayValue) {
-        // TODO: implement body method
+        ElementUtils.element('#end_day').selectByAttribute("value", endDayValue);
 
         return this;
     }
@@ -90,7 +90,7 @@ class ScheduleAddPo {
      * @returns {ScheduleAddPo}
      */
     selectEndHour(endHourValue) {
-        // TODO: implement body method
+        ElementUtils.element('#end_hour').selectByAttribute("value", endHourValue);
 
         return this;
     }
@@ -100,7 +100,9 @@ class ScheduleAddPo {
      * @returns {ScheduleAddPo}
      */
     selectEndMinute(endMinuteValue) {
-        // TODO: implement body method
+        ElementUtils.element('#end_minute').selectByVisibleText(
+            endMinuteValue
+        );
 
         return this;
     }

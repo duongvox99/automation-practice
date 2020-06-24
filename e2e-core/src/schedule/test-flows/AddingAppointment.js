@@ -37,7 +37,7 @@ export default class AddingAppointment {
     _fillAppointmentDetail(delayEachStep = this._delayEachStep) {
         let schedulePage = ScheduleAddPage;
 
-        // TODO: in code below, there is one mistake, please find out and fix it
+        // TODO: In the code below, the ordering of some actions is incorrect. They should follow the behavior of the feature.
         if (this._appointment.startDay) {
             browser.pause(delayEachStep);
             schedulePage.selectStartDay(this._appointment.startDay);
@@ -49,6 +49,7 @@ export default class AddingAppointment {
         }
 
         if (this._appointment.startYear) {
+            browser.pause(delayEachStep);
             schedulePage.selectStartYear(this._appointment.startYear);
         }
 

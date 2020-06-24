@@ -76,7 +76,6 @@ class ScheduleViewPo {
 
         return ElementUtils.isElementVisible(attachmentLocator);
     }
-
 }
 
 module.exports = new ScheduleViewPo();
