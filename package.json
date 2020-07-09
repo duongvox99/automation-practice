@@ -51,6 +51,7 @@
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
     "allure-commandline": "^2.13.0",
-    "log4js": "^6.1.2"
+    "log4js": "^6.1.2",
+    "minimist": ">=0.2.1"
   }
 }
