@@ -6,7 +6,8 @@ process.env.GAROON_TYPE = 'cgi';
 // process.env.NUMBER_RETRIES = 0;
 
 exports.config = {
-     runner: 'local',
+    runner: 'local',
+    services: ['selenium-standalone'],
     // host: 'localhost',
     // port: 4444,
     //path: '/wd/hub',
@@ -20,7 +21,6 @@ exports.config = {
         compilers: ['js:@babel/register'],
     },
     sync: true,
-    services: ['selenium-standalone'],
     reporters: [
         'spec',
         ['junit', {
