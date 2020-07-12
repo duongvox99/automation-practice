@@ -38,6 +38,7 @@ export default class AddingAppointment {
         let schedulePage = ScheduleAddPage;
 
         // TODO: In the code below, the ordering of some actions is incorrect. They should follow the behavior of the feature.
+
         if (this._appointment.startDay) {
             browser.pause(delayEachStep);
             schedulePage.selectStartDay(this._appointment.startDay);
