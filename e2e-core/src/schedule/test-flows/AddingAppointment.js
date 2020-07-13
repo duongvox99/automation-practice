@@ -18,11 +18,15 @@ export default class AddingAppointment {
      * @returns {AddingAppointment}
      */
     addRegularAppointment(pauseInMs = 0) {
+        // Step 1: Go to New appointment screen
         this.goToAddAppointmentPage();
+
+        // Step 2: Fill detail appointment at add new appointment
         this._fillAppointmentDetail();
+
         browser.pause(pauseInMs);
 
-        // TODO: click on submit btn
+        // Step 3: Click on the Add button to add an appointment
         // ScheduleAddPage.clickOnAddBtn();
 
         return this;
@@ -122,7 +126,10 @@ export default class AddingAppointment {
      * @returns {AddingAppointment}
      */
     goToAddAppointmentPage() {
-        ScheduleIndexPage.openPage().clickOnNewAppointmentLnk();
+        ScheduleIndexPage
+            .openPage()
+            .clickOnNewAppointmentLnk();
+
         return this;
     }
 
