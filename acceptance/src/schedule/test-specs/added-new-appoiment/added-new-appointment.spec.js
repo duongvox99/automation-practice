@@ -1,3 +1,4 @@
+/* Focus: The spec name is a file name */
 describe('AddingRegularAppointment', () => {
     before('Sign-in Garoon testing site', () => {
         /* Sign in to Testing site scope */
