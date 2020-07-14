@@ -55,6 +55,7 @@ class ScheduleViewPo {
      */
     getNotes() {
         // TODO: implement body method
+        // Focus: We use the xpath feature for selecting Note filed instead Css selector
     }
 
     /**
