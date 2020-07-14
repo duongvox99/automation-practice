@@ -7,20 +7,17 @@ export default class AddingAppointment {
      * @constructor
      * @inheritDoc
      * @param {Object} appointmentInfo
-     * @param {number} delayEachStep
      */
-    constructor(appointmentInfo, delayEachStep = 0) {
+    constructor(appointmentInfo) {
         this._appointment = appointmentInfo;
-        this._delayEachStep = delayEachStep
     }
 
     /**
      * @returns {AddingAppointment}
      */
-    addRegularAppointment(pauseInMs = 0) {
+    addRegularAppointment() {
         this.goToAddAppointmentPage();
         this._fillAppointmentDetail();
-        browser.pause(pauseInMs);
 
         // TODO: click on submit btn
         // ScheduleAddPage.clickOnAddBtn();
@@ -30,58 +27,48 @@ export default class AddingAppointment {
 
     /**
      *
-     * @param {number} delayEachStep
      * @returns {AddingAppointment}
      * @private
      */
-    _fillAppointmentDetail(delayEachStep = this._delayEachStep) {
+    _fillAppointmentDetail() {
         let schedulePage = ScheduleAddPage;
 
         // TODO: In the code below, the ordering of some actions is incorrect. They should follow the behavior of the feature.
 
         if (this._appointment.startDay) {
-            browser.pause(delayEachStep);
             schedulePage.selectStartDay(this._appointment.startDay);
         }
 
         if (this._appointment.startMonth) {
-            browser.pause(delayEachStep);
             schedulePage.selectStartMonth(this._appointment.startMonth);
         }
 
         if (this._appointment.startYear) {
-            browser.pause(delayEachStep);
             schedulePage.selectStartYear(this._appointment.startYear);
         }
 
         if (this._appointment.startHour) {
-            browser.pause(delayEachStep);
             schedulePage.selectStartHour(this._appointment.startHour);
         }
 
         if (this._appointment.startMinute) {
-            browser.pause(delayEachStep);
             schedulePage.selectStartMinute(this._appointment.startMinute);
         }
 
         if (this._appointment.endYear) {
-            browser.pause(delayEachStep);
             schedulePage.selectEndYear(this._appointment.endYear);
         }
 
         if (this._appointment.endMonth) {
-            browser.pause(delayEachStep);
             schedulePage.selectEndMonth(this._appointment.endMonth);
         }
 
         if (this._appointment.endDay) {
-            browser.pause(delayEachStep);
             schedulePage.selectEndDay(this._appointment.endDay);
         }
 
 
         if (this._appointment.endHour) {
-            browser.pause(delayEachStep);
             schedulePage.selectEndHour(this._appointment.endHour);
         }
 
@@ -90,17 +77,14 @@ export default class AddingAppointment {
         }
 
         if (this._appointment.eventMenu) {
-            browser.pause(delayEachStep);
             ScheduleAddPage.selectAppointmentMenu(this._appointment.eventMenu);
         }
 
         if (this._appointment.subject) {
-            browser.pause(delayEachStep);
             schedulePage.inputSubject(this._appointment.subject);
         }
 
         if (this._appointment.notes) {
-            browser.pause(delayEachStep);
             schedulePage.inputNotes(this._appointment.notes);
         }
         return this;
