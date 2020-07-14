@@ -19,10 +19,10 @@ export default class AddingAppointment {
         // Step 1: Go to New appointment screen
         this.goToAddAppointmentPage();
 
-        // Step 2: Fill detail appointment at add new appointment
+        // Step 2: Fill detail appointment at add new appointment screen
         this._fillAppointmentDetail();
 
-        // Step 3: Click on the Add button to add an appointment
+        // Step 3: Click on the Add button to add new an appointment
         // ScheduleAddPage.clickOnAddBtn();
 
         return this;
@@ -30,7 +30,6 @@ export default class AddingAppointment {
 
     /**
      *
-     * @param {number} delayEachStep
      * @returns {AddingAppointment}
      * @private
      */
