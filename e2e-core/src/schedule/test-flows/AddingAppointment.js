@@ -22,7 +22,7 @@ export default class AddingAppointment {
         // Step 2: Fill detail appointment at add new appointment screen
         this._fillAppointmentDetail();
 
-        // Step 3: Click on the Add button to add new an appointment
+        // TODO Step 3: Click on the Add button to add new an appointment
         // ScheduleAddPage.clickOnAddBtn();
 
         return this;
