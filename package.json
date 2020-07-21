@@ -4,7 +4,7 @@
   "description": "automation practice",
   "scripts": {
     "test": "wdio",
-    "allure-report": "node_modules/.bin/allure generate ./test/reports/allure-results && allure open"
+    "allure-report": "node_modules/.bin/allure generate ./test-report/allure-results && allure open"
   },
   "keywords": [
     "cybozu vietnam",
