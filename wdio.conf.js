@@ -24,12 +24,11 @@ exports.config = {
     reporters: [
         'spec',
         ['junit', {
-            outputDir: './test/reports/junit-results/',
+            outputDir: './test-report/junit-results/',
         }
         ],
-
         ['allure', {
-            outputDir: './test/reports/allure-results/',
+            outputDir: './test-report/allure-results/',
             disableWebdriverStepsReporting: true,
             disableWebdriverScreenshotsReporting: false,
         }

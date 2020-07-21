@@ -1,7 +1,7 @@
 import AuthBase from './AuthBase';
-import ElementUtils from '../../common/element-wrapper/ElementUtils';
-import PageNavigator from "../../common/pages/PageNavigator";
-import BrowserUtils from "../../common/browser-wrapper/BrowserUtils";
+import ElementUtils from '../../shared/element-wrapper/ElementUtils';
+import PageNavigator from "../../shared/pages/PageNavigator";
+import BrowserUtils from "../../shared/browser-wrapper/BrowserUtils";
 
 const USER_NAME_TXB = '//input[@name="username"]';
 const PASSWORD_TXB = '//input[@name="password"]';

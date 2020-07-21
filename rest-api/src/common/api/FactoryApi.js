@@ -1,6 +1,6 @@
 import ScheduleApi from '../../schedule/test-flows/ScheduleApi';
 import AddressApi from '../../address/test-flows/AddressApi';
-import AppIds from '../../../../e2e-core/src/common/AppIds';
+import AppIds from '../../../../e2e-core/src/shared/AppIds';
 
 const DEFAULT_CREDENTIALS = {
     username: 'Administrator',

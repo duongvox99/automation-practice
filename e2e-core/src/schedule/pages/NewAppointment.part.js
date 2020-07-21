@@ -1,4 +1,4 @@
-import ElementUtils from '../../common/element-wrapper/ElementUtils';
+import ElementUtils from '../../shared/element-wrapper/ElementUtils';
 const NEW_APPOINTMENT_LNK = '//div[@id="smart_main_menu_part"]/span/a[contains(@href, "schedule/add")]';
 
 export default class NewAppointmentPart {

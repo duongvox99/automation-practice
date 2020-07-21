@@ -1,5 +1,5 @@
-import ElementUtils from '../../common/element-wrapper/ElementUtils';
-import ButtonSpinner from '../../common/element-wrapper/ButtonSpinner';
+import ElementUtils from '../../shared/element-wrapper/ElementUtils';
+import ButtonSpinner from '../../shared/element-wrapper/ButtonSpinner';
 
 const APPOINTMENT_MENU_DDL = '//dl[contains(@class,"event_menu_grn")]/dt/a/span[2]';
 const APPOINTMENT_MENU_VALUE = '//li[contains(@te,"%s")]';

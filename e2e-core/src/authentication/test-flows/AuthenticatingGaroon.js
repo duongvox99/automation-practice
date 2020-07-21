@@ -1,7 +1,7 @@
 import AuthOnpremisePage from '../pages/AuthOnPremise.po';
 import AuthCloudPage from '../pages/AuthCloud.po';
-import ConfigParser from "../../common/ConfigParser";
-import PageNavigator from "../../common/pages/PageNavigator";
+import ConfigParser from "../../shared/ConfigParser";
+import PageNavigator from "../../shared/pages/PageNavigator";
 
 let AuthPage;
 

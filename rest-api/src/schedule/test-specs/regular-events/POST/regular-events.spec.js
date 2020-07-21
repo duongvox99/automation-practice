@@ -1,5 +1,5 @@
 import FactoryApi from '../../../../common/api/FactoryApi';
-import AppIds from '../../../../../../e2e-core/src/common/AppIds';
+import AppIds from '../../../../../../e2e-core/src/shared/AppIds';
 
 describe('POST schedule/events', () => {
     let scheduleApi;

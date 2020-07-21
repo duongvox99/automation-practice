@@ -1,7 +1,7 @@
-import DateTimeGenerator from "../../../../../e2e-core/src/common/DateTimeGenerator";
+import DateTimeGenerator from "../../../../../e2e-core/src/shared/DateTimeGenerator";
 import RegularAppointment from "../../../../../e2e-core/src/schedule/models/RegularAppointment";
 
-const signInUser = {username: "user1", password: "user1"};
+const account = {username: "user1", password: "user1"};
 
 const currentDate = new DateTimeGenerator().adjustDateTime({day: 0});
 let currentHours = new Date().getHours();
@@ -28,6 +28,6 @@ appointment.visibility = 'Public';
 
 appointment.notes = 'Please join the AWS on time';
 
-const testData = {appointmentInfo: appointment, signInUser: signInUser};
+const testData = {appointmentInfo: appointment, account: account};
 
 export {testData as default}

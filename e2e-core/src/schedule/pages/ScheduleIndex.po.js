@@ -1,6 +1,6 @@
 import NewAppointmentPart from './NewAppointment.part';
-import PageNavigator from '../../common/pages/PageNavigator';
-import ElementUtils from '../../common/element-wrapper/ElementUtils';
+import PageNavigator from '../../shared/pages/PageNavigator';
+import ElementUtils from '../../shared/element-wrapper/ElementUtils';
 
 const SCHEDULE_INDEX_URL = 'schedule/index';
 const APPOINTMENT_SUBJECT_LNK = '(//a[contains(., "%s")])[1]';

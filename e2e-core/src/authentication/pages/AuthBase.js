@@ -1,4 +1,4 @@
-import ElementUtils from "../../common/element-wrapper/ElementUtils";
+import ElementUtils from "../../shared/element-wrapper/ElementUtils";
 
 export default class AuthBase {
     /**

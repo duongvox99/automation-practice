@@ -1,6 +1,6 @@
 import AuthBase from './AuthBase';
-import PageNavigator from "../../common/pages/PageNavigator";
-import ElementUtils from "../../common/element-wrapper/ElementUtils";
+import PageNavigator from "../../shared/pages/PageNavigator";
+import ElementUtils from "../../shared/element-wrapper/ElementUtils";
 
 const USER_NAME_TXB = '[name="_account"]';
 const PASSWORD_TXB = '[name="_password"]';

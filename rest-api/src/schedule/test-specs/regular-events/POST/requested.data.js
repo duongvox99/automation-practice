@@ -1,4 +1,4 @@
-import RandomDataGenerator from '../../../../../../e2e-core/src/common/RandomDataGenerator';
+import RandomDataGenerator from '../../../../../../e2e-core/src/shared/RandomDataGenerator';
 import DateTimeUtils from '../../../../common/DateTimeUtils';
 
 const requestedData = {

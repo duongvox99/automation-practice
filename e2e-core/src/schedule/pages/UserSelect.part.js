@@ -1,4 +1,4 @@
-import UserSelectBasePart from '../../common/pages/UserSelectBase.part';
+import UserSelectBasePart from '../../shared/pages/UserSelectBase.part';
 
 const USER_SEARCH_SPINNER = '#spinner_selectlist_CID';
 const SELECTED_ATTENDEE =    '//ul[@id="ul_selectlist_CID"]/li//span[text() = "%s"]';

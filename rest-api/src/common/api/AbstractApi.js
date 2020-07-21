@@ -1,4 +1,4 @@
-import PageNavigator from "../../../../e2e-core/src/common/pages/PageNavigator";
+import PageNavigator from "../../../../e2e-core/src/shared/pages/PageNavigator";
 
 const queryString = require('querystring');
 const logger = require('./Logger');

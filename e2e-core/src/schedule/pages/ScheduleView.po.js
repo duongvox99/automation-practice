@@ -1,5 +1,5 @@
-import StringUtils from '../../common/StringUtils';
-import ElementUtils from "../../common/element-wrapper/ElementUtils";
+import StringUtils from '../../shared/StringUtils';
+import ElementUtils from "../../shared/element-wrapper/ElementUtils";
 
 const SUBJECT_TXT = '//div[@id="event_list"]//h2';
 const FACILITY_LNK = '//table[@class="viewTable-grn"]//span[@class="facility-grn"]/a';

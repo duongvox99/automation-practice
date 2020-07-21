@@ -1,5 +1,5 @@
 // Automation testing Hello World! Example: Your First Program
-import BrowserUtils from "../../../../e2e-core/src/common/browser-wrapper/BrowserUtils";
+import BrowserUtils from "../../../../e2e-core/src/shared/browser-wrapper/BrowserUtils";
 
 describe('AuthenticationTesting', () => {
     it('should login successfully', () => {

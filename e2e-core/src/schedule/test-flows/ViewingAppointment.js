@@ -1,5 +1,5 @@
 import ScheduleViewPage from '../pages/ScheduleView.po';
-import StringUtils from '../../common/StringUtils';
+import StringUtils from '../../shared/StringUtils';
 
 export default class ViewingAppointment {
     /**
