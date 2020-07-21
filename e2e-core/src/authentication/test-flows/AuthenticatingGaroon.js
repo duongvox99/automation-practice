@@ -66,4 +66,21 @@ export default class AuthenticatingGaroon {
 
         return this;
     }
+
+    /**
+     *
+     * @returns {AuthenticatingGaroon}
+     */
+    verifyLoggedInSuccess(){
+       const isLoggedIn = AuthPage.isLoggedIn(this._userName);
+
+        assert.isTrue(
+            isLoggedIn,
+            `Username or password is incorrect.
+            Username: ${this._userName}
+            Password: ${this._password}`
+        );
+
+       return this;
+    }
 }

@@ -39,6 +39,17 @@ class Auth extends AuthBase {
         return LOGIN_BTN;
     }
 
+    /**
+     *
+     * @param {string} user
+     * @returns {boolean}
+     */
+    isLoggedIn(user) {
+        const selector = sprintf('//*[@id="header"]//span[@title="%s"]', user);
+
+        return ElementUtils.isElementVisible(selector);
+    }
+
     isLoginScreen() {
         return ElementUtils.isExisting(
             '//*[@id="login-form-outer"]//input[@name="username"]'

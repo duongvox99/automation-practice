@@ -43,6 +43,17 @@ class Auth extends AuthBase {
     }
 
     /**
+     *
+     * @param {string} user
+     * @returns {boolean}
+     */
+    isLoggedIn(user) {
+        const selector = sprintf('//*[@id="header"]//span[@title="%s"]', user);
+
+        return ElementUtils.isElementVisible(selector);
+    }
+
+    /**
      * @returns {boolean}
      */
     isLoginScreen() {
