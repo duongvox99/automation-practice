@@ -4,7 +4,8 @@ describe('AddingRegularAppointment', () => {
         /* Sign in to Testing site scope */
         // In order login to Garoon site, use one of below options
         // sign_in(testData.account);
-        // or new Authenticating(testData.account).login();
+        // or
+        // new Authenticating(testData.account).login();
     });
 
     it('#sh1 add-regular-appointment should add an appointment successfully', () => {
