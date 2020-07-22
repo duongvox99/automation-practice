@@ -6,102 +6,102 @@ const APPOINTMENT_MENU_VALUE = '//li[contains(@te,"%s")]';
 
 class ScheduleAddPo {
     /**
-     * @param {string} startYearValue
+     * @param {string} yearValue
      * @returns {ScheduleAddPo}
      */
-    selectStartYear(startYearValue) {
-        ElementUtils.element('#start_year').selectByVisibleText(startYearValue);
+    selectStartYear(yearValue) {
+        ElementUtils.element('#start_year').selectByVisibleText(yearValue);
 
         return this;
     }
 
     /**
-     * @param {string} startMonthValue
+     * @param {string} monthValue
      * @returns {ScheduleAddPo}
      */
-    selectStartMonth(startMonthValue) {
-        ElementUtils.element('#start_month').selectByAttribute("value", startMonthValue);
+    selectStartMonth(monthValue) {
+        ElementUtils.element('#start_month').selectByAttribute("value", monthValue);
 
         return this;
     }
 
     /**
-     * @param {string} startDayValue
+     * @param {string} dayValue
      * @returns {ScheduleAddPo}
      */
-    selectStartDay(startDayValue) {
+    selectStartDay(dayValue) {
         // TODO: implement body method
 
         return this;
     }
 
     /**
-     * @param {string} startHourValue
+     * @param {string} hourValue
      * @returns {ScheduleAddPo}
      */
-    selectStartHour(startHourValue) {
+    selectStartHour(hourValue) {
         // TODO: implement body method
 
         return this;
     }
 
     /**
-     * @param {string} startMinuteValue
+     * @param {string} minuteValue
      * @returns {ScheduleAddPo}
      */
-    selectStartMinute(startMinuteValue) {
+    selectStartMinute(minuteValue) {
         // TODO: implement body method
 
         return this;
     }
 
     /**
-     * @param {string} endYearValue
+     * @param {string} yearValue
      * @returns {ScheduleAddPo}
      */
-    selectEndYear(endYearValue) {
-        ElementUtils.element('#end_year').selectByAttribute("value", endYearValue);
+    selectEndYear(yearValue) {
+        ElementUtils.element('#end_year').selectByAttribute("value", yearValue);
 
         return this;
     }
 
     /**
-     * @param {string} endMonthValue
+     * @param {string} monthValue
      * @returns {ScheduleAddPo}
      */
-    selectEndMonth(endMonthValue) {
-        ElementUtils.element('#end_month').selectByAttribute("value", endMonthValue);
+    selectEndMonth(monthValue) {
+        ElementUtils.element('#end_month').selectByAttribute("value", monthValue);
 
         return this;
     }
 
     /**
-     * @param {string} endDayValue
+     * @param {string} dayValue
      * @returns {ScheduleAddPo}
      */
-    selectEndDay(endDayValue) {
-        ElementUtils.element('#end_day').selectByAttribute("value", endDayValue);
+    selectEndDay(dayValue) {
+        ElementUtils.element('#end_day').selectByAttribute("value", dayValue);
 
         return this;
     }
 
     /**
-     * @param {string} endHourValue
+     * @param {string} hourValue
      * @returns {ScheduleAddPo}
      */
-    selectEndHour(endHourValue) {
-        ElementUtils.element('#end_hour').selectByAttribute("value", endHourValue);
+    selectEndHour(hourValue) {
+        ElementUtils.element('#end_hour').selectByAttribute("value", hourValue);
 
         return this;
     }
 
     /**
-     * @param {string} endMinuteValue
+     * @param {string} minuteValue
      * @returns {ScheduleAddPo}
      */
-    selectEndMinute(endMinuteValue) {
+    selectEndMinute(minuteValue) {
         ElementUtils.element('#end_minute').selectByVisibleText(
-            endMinuteValue
+            minuteValue
         );
 
         return this;
